@@ -1,0 +1,73 @@
+.monster {
+    position: fixed;
+    bottom: 17%;
+    right: 25%;
+    width: 12vmin;
+    animation: slide-left-1;
+    animation-duration: 2s;
+}
+
+.monster:nth-child(2) {
+    bottom: 12%;
+    right: 32%;
+    width: 7vmin;
+    animation: slide-left-2;
+    animation-duration: 2s;
+}
+
+.monster:nth-child(3) {
+    bottom: 12%;
+    width: 7vmin;
+    right: 20%;
+    animation: slide-left-3;
+    animation-duration: 2s;
+}
+
+@keyframes slide-left-1 {
+    0% { right: -10% }
+    100% { right: 25%; }
+}
+
+@keyframes slide-left-2 {
+    0% { right: -10% }
+    100% { right: 32%; }
+}
+
+@keyframes slide-left-3 {
+    0% { right: -10% }
+    100% { right: 20%; }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .monster {
+        width: 20vmin;
+        right: 18%;
+    }
+
+    .monster:nth-child(2) {
+        width: 10vmin;
+        right: 30%;
+    }
+
+    .monster:nth-child(3) {
+        width: 11vmin;
+        right: 10%;
+    }
+
+    @keyframes slide-left-1 {
+        0% { right: -20% }
+        100% { right: 18%; }
+    }
+    
+    @keyframes slide-left-2 {
+        0% { right: -20% }
+        100% { right: 30%; }
+    }
+    
+    @keyframes slide-left-3 {
+        0% { right: -20% }
+        100% { right: 10%; }
+    }
+
+}

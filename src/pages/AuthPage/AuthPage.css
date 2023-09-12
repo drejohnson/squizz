@@ -1,0 +1,24 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+#auth-button {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+}
+
+#auth-button p {
+  z-index: 10;
+  color: white;
+}

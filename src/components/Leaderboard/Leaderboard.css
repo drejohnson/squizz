@@ -1,0 +1,75 @@
+.leaderboard {
+    background-image: url('../../../public/assets/window.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: fixed;
+    width: 50vmin;
+    height: 35vmin;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.leaderboard-title {
+    color: black;
+    position: fixed;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-size: 2vmin;
+    letter-spacing: 1vmin;
+}
+
+.players {
+    position: fixed;
+    top: 53.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.coins {
+    display: flex;
+    flex-direction: column;
+    margin: 6vmin 0 0 8vmin;
+}
+
+#coin {
+    width: 5vmin;
+}
+
+.player {
+    font-size: 3vmin;
+    color: black;
+    line-height: 5.1vmin;
+    list-style-type: none;
+    text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .leaderboard {
+        width: 80vmin;
+        height: 50vmin;
+    }
+
+    .leaderboard-title {
+        font-size: 4vmin;
+        top: 7%;
+    }
+
+    .coins {
+        margin: 9vmin 0 0 14vmin;
+    }
+
+    #coin {
+        width: 7vmin;
+    }
+
+    .player {
+        font-size: 5vmin;
+        line-height: 7vmin;
+        margin: 0 0 0 47vmin;
+        width: 80vw;
+    }
+}
